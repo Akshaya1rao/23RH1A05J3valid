@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <input type="'text" id="phone" placeholder="Eneter mobile no">
+        <p id="message">
+            <script>
+                let mobile=document.getElementById("phone");
+                phone.addEventListener("input",function(){
+                    let str=phone.value;
+                    const mregex=/^[0-9]{10}$/;
+                    if(mregex.test(str))
+                {
+                    document.getElementById("message").innerHTML="Valid";
+                    document.getElementById("message").style="color:green";
+                }
+                else{
+                    document.getElementById("message").innerHTML="Not Valid";
+                    document.getElementById("message").style="color:red";
+                }
+                })
+            </script>
+        </p>
+    </body>
+</html>
